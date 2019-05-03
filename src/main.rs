@@ -67,7 +67,7 @@ fn download_usd() -> Vec<f32> {
         .collect()
 }
 
-fn main() -> Result<(), Box<Error>> {
+fn main() {
     // choose a number of time steps
     let n_steps = 4;
 
@@ -75,12 +75,7 @@ fn main() -> Result<(), Box<Error>> {
     let len = historic_data.len() - 20;
     historic_data.split_off(len);
 
-    //  data.tipo_cambio_a3500.values[:-20]
-  //  println!("historic {:?}", historic_data);
-
     // split into samples
     let (x, y) = split_sequence(historic_data, n_steps);
     println!("secuencias x {:?}", x);
-
-    Ok(())
 }
