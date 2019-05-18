@@ -5,9 +5,8 @@ authors = ["Andrés Testi <andres.a.testi.gmail.com>"]
 edition = "2018"
 
 [dependencies]
-tensorflow = { version = "0.13", features = ["tensorflow_gpu"] }
-failure = "0.1.5"
 reqwest="0.9"
+gnuplot = "0.0.31"
 chrono={ version = "0.4", features = ["serde"] }
 serde = { version = "1.0", features = ["derive"] }
 csv = "1"
